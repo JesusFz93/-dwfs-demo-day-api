@@ -1,0 +1,27 @@
+@api = http://localhost:4002/api/products
+
+### obtener productos
+{{api}}
+
+### crear producto
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "Product 5",
+    "description": "Description 5",
+    "price": 10.00
+}
+
+### actualizar producto
+PUT {{api}}/6308c0807876b85dd768eb3f
+Content-Type: application/json
+
+{
+    "name": "Product 5",
+    "description": "Description 7",
+    "price": 13.00
+}
+
+### eliminar producto 
+DELETE {{api}}/6308c0624e639168fd7a2ae1

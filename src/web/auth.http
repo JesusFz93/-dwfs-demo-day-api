@@ -1,0 +1,24 @@
+@api = http://localhost:4002/api/auth
+
+### sign in
+POST {{api}}/login
+Content-Type: application/json
+
+{
+    "username": "jose",
+    "password": "121212"
+}
+
+### sign up
+POST {{api}}
+Content-Type: application/json
+
+{
+    "email": "jose@correo.com",
+    "username": "jose",
+    "password": "121212"
+}
+
+### renovar token
+{{api}}
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjdjOGNiNjYzN2UzM2Q2MmNjYWM2MSIsImlhdCI6MTY2MzU1MTcxMCwiZXhwIjoxNjYzNTY2MTEwfQ.IxeJNDXojK1qeBNX9z8jE3dMXJhaM_OERFLJVihWU_g
