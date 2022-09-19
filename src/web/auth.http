@@ -14,11 +14,11 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "email": "jose@correo.com",
-    "username": "jose",
+    "email": "josefa@correo.com",
+    "username": "josefa",
     "password": "121212"
 }
 
 ### renovar token
 {{api}}
-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjdjOGNiNjYzN2UzM2Q2MmNjYWM2MSIsImlhdCI6MTY2MzU1MTcxMCwiZXhwIjoxNjYzNTY2MTEwfQ.IxeJNDXojK1qeBNX9z8jE3dMXJhaM_OERFLJVihWU_g
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMjhkZTk5NDNhODQ0MzdkYjFjYzg4YyIsImlhdCI6MTY2MzYyMjgxMCwiZXhwIjoxNjYzNjM3MjEwfQ.L3UqNiRzQ_uCsaii3tz01Q_7ifWHSxlevS4N9VA_uZ0

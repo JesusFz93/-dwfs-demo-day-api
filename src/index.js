@@ -19,6 +19,11 @@ app.get("/", (req, res) => {
   return res.json({
     msg: "Bienvenido al API de Demo",
     autor: process.env.AUTOR,
+    version: `Version 1.0.0`,
+    ultimas_mejoras: [
+      "Se agrego el endpoint de login",
+      "Se agrego el endpoint de registro",
+    ],
   });
 });
 app.use("/api/products", require("./routes/products.routes"));

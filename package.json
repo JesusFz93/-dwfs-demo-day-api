@@ -1,8 +1,8 @@
 {
   "name": "demo-day-api",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Api para la demo-day-app",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.js",

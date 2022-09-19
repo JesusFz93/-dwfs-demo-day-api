@@ -36,10 +36,12 @@ const registerUser = async (req, res) => {
 
     const token = await generarJWT(nuevoUsuario.id);
 
+    const { password: contra, ...user_obj } = nuevoUsuario._doc;
+
     return res.status(201).json({
       ok: true,
       msg: "Registro exitoso",
-      data: nuevoUsuario,
+      data: user_obj,
       token,
     });
   } catch (error) {
@@ -75,12 +77,14 @@ const login = async (req, res) => {
 
     const token = await generarJWT(user.id);
 
-    const { password: removedpassword, ...usuario } = user;
+    const { password: contra, ...user_obj } = user._doc;
+
+    console.log();
 
     return res.json({
       ok: true,
       msg: "Acceso otorgado",
-      data: usuario,
+      data: user_obj,
       token,
     });
   } catch (error) {
@@ -97,10 +101,12 @@ const verificarUsuario = async (req, res) => {
 
   const token = await generarJWT(usuario.id);
 
+  const { password: contra, ...user_obj } = usuario._doc;
+
   return res.json({
     ok: true,
     msg: "Usuario validado",
-    data: usuario,
+    data: user_obj,
     token,
   });
 };
