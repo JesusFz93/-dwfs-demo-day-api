@@ -4,7 +4,7 @@ const { generarJWT } = require("../helpers/jwt.helper");
 
 const registerUser = async (req, res) => {
   try {
-    const { email, username, password } = req.body;
+    const { email, username, password, image } = req.body;
 
     const emailEncontrado = await User.findOne({ email: email });
 
@@ -27,8 +27,9 @@ const registerUser = async (req, res) => {
     const salt = bcrypt.genSaltSync(10);
 
     const user = {
-      email: email,
-      username: username,
+      email,
+      username,
+      image,
       password: bcrypt.hashSync(password, salt),
     };
 
@@ -36,12 +37,17 @@ const registerUser = async (req, res) => {
 
     const token = await generarJWT(nuevoUsuario.id);
 
-    const { password: contra, ...user_obj } = nuevoUsuario._doc;
+    const userFound = {
+      id: nuevoUsuario.id,
+      email: nuevoUsuario.email,
+      username: nuevoUsuario.username,
+      image: nuevoUsuario.image,
+    }
 
     return res.status(201).json({
       ok: true,
       msg: "Registro exitoso",
-      data: user_obj,
+      data: userFound,
       token,
     });
   } catch (error) {
@@ -77,14 +83,17 @@ const login = async (req, res) => {
 
     const token = await generarJWT(user.id);
 
-    const { password: contra, ...user_obj } = user._doc;
-
-    console.log();
+    const userFound = {
+      id: user.id,
+      email: user.email,
+      username: user.username,
+      image: user.image,
+    }
 
     return res.json({
       ok: true,
       msg: "Acceso otorgado",
-      data: user_obj,
+      data: userFound,
       token,
     });
   } catch (error) {
@@ -101,12 +110,18 @@ const verificarUsuario = async (req, res) => {
 
   const token = await generarJWT(usuario.id);
 
-  const { password: contra, ...user_obj } = usuario._doc;
+
+  const userFound = {
+    id: usuario.id,
+    email: usuario.email,
+    username: usuario.username,
+    image: usuario.image,
+  }
 
   return res.json({
     ok: true,
     msg: "Usuario validado",
-    data: user_obj,
+    data: userFound,
     token,
   });
 };

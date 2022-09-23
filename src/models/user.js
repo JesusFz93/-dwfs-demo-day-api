@@ -15,6 +15,10 @@ const UserSchema = Schema({
   password: {
     type: String,
   },
+
+  image: {
+    type: String,
+  },
 });
 
 UserSchema.methods.toJSON = function () {
