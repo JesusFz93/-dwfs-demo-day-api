@@ -1,13 +1,15 @@
 @api = http://localhost:4002/api/users
 
 ### sign in
-PUT {{api}}/632e006c4225cece819636ca
+PUT {{api}}/632f65ba5b64be0231a09227
 Content-Type: application/json
-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmUwMDZjNDIyNWNlY2U4MTk2MzZjYSIsImlhdCI6MTY2NDA0MTUyOCwiZXhwIjoxNjY0MDU1OTI4fQ.yFe4SQar4suwTZQHqglAT5V-PFuXzzn-dS3Y92Ga7gw
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmY2NWJhNWI2NGJlMDIzMWEwOTIyNyIsImlhdCI6MTY2NDA1MDYzNSwiZXhwIjoxNjY0MDY1MDM1fQ.n-w6eIXFfOoH6F8sbBS-4PaNQB5zYVu2HtACdtnB-DE
 
 {
-    "email": "sebastian@correo.com",
-    "username": "sebastian",
+    "email": "",
+    "username": "",
     "password": "",
-    "image": "https://www.esimagenes.com/pimagen/squirtle-pokemon.png"
+    "image": "https://www.esimagenes.com/pimagen/squirtle-pokemon.png",
+    "firstName" : "Sebastian",
+    "lastName" : "Garcia"
 }

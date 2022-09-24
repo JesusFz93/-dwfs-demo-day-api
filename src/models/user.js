@@ -14,6 +14,15 @@ const UserSchema = Schema({
     unique: true,
     set: skipEmpty,
   },
+  firstName: {
+    type: String,
+    set: skipEmpty,
+  },
+
+  lastName: {
+    type: String,
+    set: skipEmpty,
+  },
 
   password: {
     type: String,

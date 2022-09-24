@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 
 const updateUser = async (req, res) => {
   try {
-    const { email, username, password, image } = req.body;
+    const { email, username, password, image, firstName, lastName } = req.body;
     const { id } = req.params;
     const { usuario } = req;
 
@@ -45,6 +45,8 @@ const updateUser = async (req, res) => {
       email,
       username,
       image,
+      firstName,
+      lastName,
     };
 
     if (password) {
@@ -61,6 +63,8 @@ const updateUser = async (req, res) => {
       email: usuarioActualizado.email,
       username: usuarioActualizado.username,
       image: usuarioActualizado.image,
+      firstName: usuarioActualizado.firstName,
+      lastName: usuarioActualizado.lastName,
     };
 
     return res.status(200).json({

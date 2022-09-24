@@ -5,7 +5,7 @@ POST {{api}}/login
 Content-Type: application/json
 
 {
-    "username": "sebastian",
+    "username": "robertoss",
     "password": "121212"
 }
 
@@ -14,12 +14,11 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "email": "sebastiana@correo.com",
-    "username": "sebastiana",
-    "password": "121212",
-    "image": "https://www.esimagenes.com/pimagen/squirtle-pokemon.png"
+    "email": "robertoss@correo.com",
+    "username": "robertoss",
+    "password": "121212"
 }
 
 ### renovar token
 {{api}}
-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmUwMDZjNDIyNWNlY2U4MTk2MzZjYSIsImlhdCI6MTY2NDA0MTQ5NSwiZXhwIjoxNjY0MDU1ODk1fQ.qIw1QPxsG8JmVhi7mZbk_hW8ySkQlqTNL6o4GjhqN5w
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmY2NWJhNWI2NGJlMDIzMWEwOTIyNyIsImlhdCI6MTY2NDA1MDYyOCwiZXhwIjoxNjY0MDY1MDI4fQ.4-rwzllnZpB6XWXwZX-45RQ5i7KIJX002y_EuR0jUM4

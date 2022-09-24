@@ -42,7 +42,9 @@ const registerUser = async (req, res) => {
       email: nuevoUsuario.email,
       username: nuevoUsuario.username,
       image: nuevoUsuario.image,
-    }
+      firstName: nuevoUsuario.firstName || "",
+      lastName: nuevoUsuario.lastName || "",
+    };
 
     return res.status(201).json({
       ok: true,
@@ -88,7 +90,9 @@ const login = async (req, res) => {
       email: user.email,
       username: user.username,
       image: user.image,
-    }
+      firstName: user.firstName || "",
+      lastName: user.lastName || "",
+    };
 
     return res.json({
       ok: true,
@@ -110,13 +114,14 @@ const verificarUsuario = async (req, res) => {
 
   const token = await generarJWT(usuario.id);
 
-
   const userFound = {
     id: usuario.id,
     email: usuario.email,
     username: usuario.username,
     image: usuario.image,
-  }
+    firstName: usuario.firstName || "",
+    lastName: usuario.lastName || "",
+  };
 
   return res.json({
     ok: true,
