@@ -1,0 +1,13 @@
+@api = http://localhost:4002/api/users
+
+### sign in
+PUT {{api}}/632e006c4225cece819636ca
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmUwMDZjNDIyNWNlY2U4MTk2MzZjYSIsImlhdCI6MTY2NDA0MTUyOCwiZXhwIjoxNjY0MDU1OTI4fQ.yFe4SQar4suwTZQHqglAT5V-PFuXzzn-dS3Y92Ga7gw
+
+{
+    "email": "sebastian@correo.com",
+    "username": "sebastian",
+    "password": "",
+    "image": "https://www.esimagenes.com/pimagen/squirtle-pokemon.png"
+}

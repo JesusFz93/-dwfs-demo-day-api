@@ -1,15 +1,18 @@
 const { Schema, model } = require("mongoose");
+const skipEmpty = require("mongoose-skip-empty");
 
 const UserSchema = Schema({
   email: {
     type: String,
     require: [true, "El email es requerido"],
+    set: skipEmpty,
   },
 
   username: {
     type: String,
     require: [true, "El nombre es requerido"],
     unique: true,
+    set: skipEmpty,
   },
 
   password: {

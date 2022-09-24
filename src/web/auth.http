@@ -5,7 +5,7 @@ POST {{api}}/login
 Content-Type: application/json
 
 {
-    "username": "sebastiana",
+    "username": "sebastian",
     "password": "121212"
 }
 
@@ -22,4 +22,4 @@ Content-Type: application/json
 
 ### renovar token
 {{api}}
-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmRmZmJhNDIyNWNlY2U4MTk2MzZiZCIsImlhdCI6MTY2Mzk1ODk3NiwiZXhwIjoxNjYzOTczMzc2fQ.m4LkxxwYGrTgX6TlpyE00bJ3VW4QivsFaFxK75nhOus
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmUwMDZjNDIyNWNlY2U4MTk2MzZjYSIsImlhdCI6MTY2NDA0MTQ5NSwiZXhwIjoxNjY0MDU1ODk1fQ.qIw1QPxsG8JmVhi7mZbk_hW8ySkQlqTNL6o4GjhqN5w
