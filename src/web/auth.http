@@ -5,8 +5,8 @@ POST {{api}}/login
 Content-Type: application/json
 
 {
-    "username": "robertoss",
-    "password": "121212"
+    "username": "ucamp",
+    "password": "ucamp"
 }
 
 ### sign up
@@ -14,11 +14,11 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "email": "robertoss@correo.com",
-    "username": "robertoss",
+    "email": "jesuss@correo.com",
+    "username": "jessus",
     "password": "121212"
 }
 
 ### renovar token
 {{api}}
-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMmY2NWJhNWI2NGJlMDIzMWEwOTIyNyIsImlhdCI6MTY2NDA1MDYyOCwiZXhwIjoxNjY0MDY1MDI4fQ.4-rwzllnZpB6XWXwZX-45RQ5i7KIJX002y_EuR0jUM4
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzBhMmVlYTk3MmNlOGIzOWQ5YjZlYyIsImlhdCI6MTY2NDEzMTgyMiwiZXhwIjoxNjY0MTQ2MjIyfQ.CqFl6H_iqxBGhRSE_kS7U9X7rRGxt3Sfza7szJs46po

@@ -26,10 +26,11 @@ app.get("/", (req, res) => {
     ],
   });
 });
-app.use("/api/products", require("./routes/products.routes"));
+
 app.use("/api/auth", authRoutes);
 app.use("/api/users", require("./routes/users.routes"));
 app.use("/api/events", require("./routes/events.routes"));
+app.use("/api/reservations", require("./routes/reservations.routes"));
 
 // 4. SERVIDOR
 app.listen(PORT, () => {

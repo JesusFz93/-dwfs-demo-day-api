@@ -1,0 +1,23 @@
+@api = http://localhost:4002/api/reservations
+
+### crear reservacion
+POST {{api}}
+Content-Type: application/json
+
+{
+    "eventDate": "10 de septiembre, 2022",
+    "eventName": "Rio Roma",
+    "eventPlace": "La Maraka",
+    "eventSeats": 8,
+    "userId": "63307cbac972327b6d6068ea",
+    "userSeats": 2
+}
+
+### obtener reservaciones
+GET {{api}}
+Content-Type: application/json
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA3Y2JhYzk3MjMyN2I2ZDYwNjhlYSIsImlhdCI6MTY2NDEyNTgxMSwiZXhwIjoxNjY0MTQwMjExfQ.NjnCnWn9MUT-jGqlI4ZWebDU962xsi5R8hwhfwJmyE0
+
+### eliminar producto 
+DELETE {{api}}/63308fd4c794521ff4082743
+auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMzA3Y2JhYzk3MjMyN2I2ZDYwNjhlYSIsImlhdCI6MTY2NDEyNTgxMSwiZXhwIjoxNjY0MTQwMjExfQ.NjnCnWn9MUT-jGqlI4ZWebDU962xsi5R8hwhfwJmyE0
